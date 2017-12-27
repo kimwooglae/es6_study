@@ -13,12 +13,21 @@ $(document).ready(function(){
     }
   }
 */
+/*
   var tool = new Tool();
 
   tool.onMouseDown = function(event) {
     var c = Shape.Circle(event.point.x, event.point.y, 20);
     c.fillColor = 'blue';
   }
+*/
+  var c = Shape.Circle(200, 200, 80);
+  c.fillColor = 'black';
+  var text = new PointText(200, 205);
+  text.justification = 'center';
+  text.fillColor = 'white'
+  text.fontSize = 20;
+  text.content = 'hello world';
 
   paper.view.draw();
 });
